@@ -6,7 +6,7 @@ title = "Tiago Xavier"
 
 [languages]
     [languages.en]
-        contentDir = 'content/english'
+        contentDir = '/content/english'
         languageCode = 'en-us'
         languageName = 'English'
         weight = 1
@@ -32,7 +32,7 @@ title = "Tiago Xavier"
                 url = "posts/"
 
     [languages.pt-br]
-        contentDir = 'content/pt-br'
+        contentDir = '/content/pt-br'
         languageCode = 'pt-br'
         languageName = 'Português'
         weight = 2
