@@ -1,0 +1,38 @@
+/* The container for the icon and the menu */
+.lang-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px; /* Space it out from other menu items */
+    cursor: pointer;
+}
+
+/* The actual menu (hidden by default) */
+.lang-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--bg-color); /* Matches theme background */
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid var(--fg-color); /* Optional border */
+    border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.lang-dropdown-content a {
+    color: var(--fg-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover inside the menu */
+.lang-dropdown-content a:hover {
+    background-color: var(--highlight-color, #e0e0e0); 
+}
+
+/* Show the menu when hovering over the container */
+.lang-dropdown:hover .lang-dropdown-content {
+    display: block;
+}

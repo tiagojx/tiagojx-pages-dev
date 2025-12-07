@@ -1,4 +1,89 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+# GLOBAL
+baseURL = 'https://tiagojx.pages.dev/'
 theme = "hugo-coder"
+defaultContentLanguage = "en"
+title = "Tiago Xavier"
+
+[languages]
+    [languages.en]
+        contentDir = 'content/english'
+        languageCode = 'en-us'
+        languageName = 'English'
+        weight = 1
+        
+        [languages.en.params]
+            info = 'Systems Student | Backend dev | DevOps enthusiast'
+            description = "Tiago Xavier's personal website."
+        
+        [languages.en.menus]
+            [[languages.en.menus.main]]
+                name = "About"
+                weight = 10
+                url = "about/"
+
+            [[languages.en.menus.main]]
+                name = "Projects"
+                weight = 20
+                url = "projects/"
+
+            [[languages.en.menus.main]]
+                name = "Blog"
+                weight = 30
+                url = "posts/"
+
+    [languages.pt-br]
+        contentDir = 'content/pt-br'
+        languageCode = 'pt-br'
+        languageName = 'Português'
+        weight = 2
+        
+        [languages.pt-br.params]
+            info = 'Estudante de Sistemas | Desenvolvedor Backend | Entusiasta de DevOps'
+            description = 'Site pessoal de Tiago Xavier.'
+        
+        [languages.pt-br.menus]
+            [[languages.pt-br.menus.main]]
+                name = "Sobre"
+                weight = 10
+                url = "about/"
+
+            [[languages.pt-br.menus.main]]
+                name = "Projetos"
+                weight = 20
+                url= "projects/"
+
+            [[languages.pt-br.menus.main]]
+                name = "Blog"
+                weight = 30
+                url = "posts/" # hugo-coder usually maps blog posts to "posts" or "blog"
+
+[params]
+    author = "Tiago Xavier"
+    keywords = "blog, developer, personal, portfolio"
+    
+    since = 2025
+
+    colorScheme = "auto"
+    hidecolorschemetoggle = false
+    custom_css = ["/css/custom.css"]
+
+# LINKS
+# GitHub
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-2x fa-github" # The specific FontAwesome class
+    weight = 1
+    url = "https://github.com/tiagojx"
+
+# LinkedIn
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fa fa-2x fa-linkedin"
+    weight = 2
+    url = "https://www.linkedin.com/in/tiagojx/"
+
+# Email
+[[params.social]]
+    name = "Email"
+    icon = "fa fa-2x fa-envelope"
+    weight = 3
